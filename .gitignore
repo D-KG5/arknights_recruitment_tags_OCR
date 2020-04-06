@@ -73,6 +73,7 @@ docs/_build/
 
 # PyBuilder
 target/
+.idea/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -119,6 +120,7 @@ venv.bak/
 
 # mkdocs documentation
 /site
+*.log
 
 # mypy
 .mypy_cache/
@@ -127,3 +129,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+*.csv
