@@ -29,10 +29,12 @@ w3 = 98
 y3 = 275
 x3 = 560
 
-
+# function to read image, pre-process it for OCR, then use OCR to get the recruitment tags from the screenshot
 def gettags(file_name):
+	# read image
 	img = cv2.imread(file_name)
-
+	
+	# resize image to factor for different resolutions
 	resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
 	resized1 = resized[y1:y1 + h, x1:x1 + w]
 	resized2 = resized[y2:y2 + h, x2:x2 + w]
@@ -61,6 +63,7 @@ def gettags(file_name):
 
 if __name__ == "__main__":
 	try:
+		# ask for user-input image file
 		image_file = input("Enter screenshot filename: ")
 		# get tags from screenshot
 		tags = gettags(image_file)
