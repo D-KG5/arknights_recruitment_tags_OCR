@@ -1,0 +1,2 @@
+# arknights_recruitment_tags_OCR
+arknights recruitment tags optical character recognition
